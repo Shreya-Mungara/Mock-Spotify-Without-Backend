@@ -1,0 +1,199 @@
+/* Root styles */
+
+
+/* General styles for headings and paragraphs */
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 1.5rem; /* Add space after each heading and paragraph */
+}
+
+/* Specific adjustments for h1 */
+h1 {
+  margin-bottom: 2rem; /* Slightly more space after h1 */
+}
+
+/* Specific adjustments for paragraphs */
+p {
+  margin-bottom: 1.5rem; /* Standard space after paragraphs */
+}
+ 
+:root {
+  font-family: 'Circular Std', Arial, sans-serif; /* Spotify font */
+  font-weight: 400;
+  color-scheme: dark;
+  color: #ffffff; /* White text on dark background */
+  background-color: #000000; /* Dark background */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Links and hover states */
+a {
+  font-weight: 500;
+  color: #1db954; /* Spotify green */
+  text-decoration: none;
+}
+a:hover {
+  color: #1ed760; /* Slightly lighter green */
+}
+
+/* Body styles */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #000000; /* Dark background */
+}
+
+/* Header */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #ffffff; /* White text */
+  margin-bottom: 1rem;
+}
+
+button {
+  border-radius: 4px; /* Less curvature */
+  border: 1px solid transparent;
+  padding: 0.2em 2em; /* Smaller padding */
+  font-size: 1em; /* Slightly smaller font */
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1db954; /* Spotify green */
+  cursor: pointer;
+  color: #ffffff;
+  transition: background-color 0.25s, transform 0.25s;
+}
+
+button:hover {
+  background-color: #1ed760; /* Lighter green on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+/* Card styles */
+.card {
+  padding: 2rem;
+  background-color: #333333; /* Dark gray background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.read-the-docs {
+  color: #b3b3b3; /* Light gray text */
+}
+
+/* Logo styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #1db954); /* Green glow on hover */
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafb); /* React blue glow */
+}
+
+/* Keyframe for rotating logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Media query for light theme */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #000000; /* Black text in light mode */
+    background-color: #ffffff; /* White background in light mode */
+  }
+  a:hover {
+    color: #1db954; /* Green accent on hover in light mode */
+  }
+  button {
+    background-color: #f9f9f9;
+    color: #1db954; /* Green text in light mode */
+  }
+}
+
+/* Spotify-inspired navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: #181818; /* Dark background for navbar */
+}
+
+.navbar .logo {
+  height: 40px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links a {
+  color: #b3b3b3;
+  font-size: 1.2rem;
+}
+
+.navbar .nav-links a:hover {
+  color: #1db954;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #181818;
+  padding: 1.5rem;
+  color: #b3b3b3;
+  text-align: center;
+  width: 100%;
+}
+
+.footer a {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+}
+
+.footer a:hover {
+  color: #1db954;
+}
+
+/* Line styles */
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #333333;
+  margin: 2rem 0;
+}
